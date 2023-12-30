@@ -438,9 +438,13 @@ function Library:create(options)
 
 	self.CurrentTheme = options.Theme
 
+	local guiName = HTTPService:GenerateGUID(false)
+	getgenv().Hy_Name = guiName
+
 	local gui = self:object("ScreenGui", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
-		ZIndexBehavior = Enum.ZIndexBehavior.Global
+		ZIndexBehavior = Enum.ZIndexBehavior.Global,
+		Name = guiName,
 	})
 
 	local notificationHolder = gui:object("Frame", {

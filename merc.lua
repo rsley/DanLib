@@ -75,7 +75,7 @@ local Library = {
 	DisplayName = nil,
 	DragSpeed = 0.06,
 	LockDragging = false,
-	ToggleKey = Enum.KeyCode.RightShift,
+	ToggleKey = Enum.KeyCode.RightAlt,
 	UrlLabel = nil,
 	Url = nil
 
@@ -874,7 +874,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.RightShift,
+		Keybind = Enum.KeyCode.RightAlt,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)

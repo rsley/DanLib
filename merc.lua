@@ -441,6 +441,8 @@ function Library:create(options)
 	local guiName = HTTPService:GenerateGUID(false)
 	getgenv().Hy_Name = guiName
 
+
+
 	local gui = self:object("ScreenGui", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
@@ -872,7 +874,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.Delete,
+		Keybind = Enum.KeyCode.RightShift,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)

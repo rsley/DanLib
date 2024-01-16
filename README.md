@@ -1,6 +1,8 @@
 # DanLib
 A roblox UI library.
 
+**I do not condone cheating of any sort on any game and all of my "cheating" scripts were made for educational purposes only.**
+
 Special thanks to
 - Kavo UI by xHeptc
 - Hydra UI from drillygzzly
